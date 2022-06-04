@@ -1,0 +1,50 @@
+server:
+  port: 10086
+spring:
+  datasource:
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.24:3306/demo?user&characterEncoding=UTF-8&useSSL=false
+    #============================Druid数据库连接池===================================
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      #初始连接池数量
+      initial-size: 5
+      #最小连接池数量
+      min-idle: 5
+      #最大连接池数量
+      max-active: 20
+      #配置获取连接等待超时的时间
+      max-wait: 30000
+      #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      time-between-eviction-runs-millis: 60000
+      #配置一个连接在池中最小生存的时间，单位是毫秒
+      min-evictable-idle-time-millis: 300000
+      #用来检测连接是否有效的sql，要求是一个查询语句。如果validationQuery为null，testOnBorrow、testOnReturn、testWhileIdle都不会其作用。
+      validation-query: select '1'
+      #连接有效性检查的超时时间 1 秒
+      validation-query-timeout: 1
+      #设置从连接池获取连接时是否检查连接有效性，true时，如果连接空闲时间超过minEvictableIdleTimeMillis进行检查，否则不检查;false时，不检查
+      test-while-idle: true
+      #申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能。
+      test-on-borrow: false
+      #归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+      test-on-return: false
+      #是否缓存preparedStatement，也就是PSCache。PSCache对支持游标的数据库性能提升巨大，比如说oracle。在mysql下建议关闭。
+      pool-prepared-statements: false
+      #要启用PSCache，必须配置大于0，当大于0时，poolPreparedStatements自动触发修改为true。在Druid中，
+      # 不会存在Oracle下PSCache占用内存过多的问题，可以把这个数值配置大一些，比如说100
+      max-open-prepared-statements: 20
+      # 配置每个连接上的PSCache的大小
+      max-pool-prepared-statement-per-connection-size: 20
+mybatis:
+  # 指定 *Mapper.xml 的位置
+  mapper-locations: classpath:mapper/*Mapper.xml
+  # 扫描表映射类，xml可以写简短类名
+  type-aliases-package: com.mybatis.entity
+  configuration:
+    # 默认开启驼峰命名法，可以不用设置该属性
+    map-underscore-to-camel-case: true
+    # 控制台打印mybatis执行的sql日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
