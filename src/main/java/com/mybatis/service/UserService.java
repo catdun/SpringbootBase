@@ -5,11 +5,12 @@ import com.mybatis.entity.User;
 import java.util.List;
 
 public interface UserService {
+
+    List<User> findAll();
+
     User findById(Long id);
 
-    List<User> findByName(String name);
+    void saveOrUpdate(User user);
 
-    List<User> findByNameAndAge(String name,
-                                   Integer ageMin,
-                                   Integer ageMax);
+    void deleteById(Long id);
 }

@@ -18,20 +18,4 @@ public class UserMapperTest {
         User user = userMapper.findById(id);
         System.out.println(user.toString());
     }
-
-    @Test
-    public void findByNameTest() {
-        String name = "%李%";
-        List<User> users = userMapper.findByName(name);
-        System.out.println(users);
-    }
-
-    @Test
-    public void findByNameAndAgeTest() {
-        String name = "李";
-        Integer min = 18;
-        Integer max = 23;
-        List<User> userList = userMapper.findByNameAndAge(name, min, max);
-        System.out.println(userList);
-    }
 }

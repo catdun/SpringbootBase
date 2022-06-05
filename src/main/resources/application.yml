@@ -38,6 +38,11 @@ spring:
       max-open-prepared-statements: 20
       # 配置每个连接上的PSCache的大小
       max-pool-prepared-statement-per-connection-size: 20
+  # 整合JSP配置文件
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
 mybatis:
   # 指定 *Mapper.xml 的位置
   mapper-locations: classpath:mapper/*Mapper.xml
