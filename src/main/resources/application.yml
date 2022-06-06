@@ -38,6 +38,11 @@ spring:
       max-open-prepared-statements: 20
       # 配置每个连接上的PSCache的大小
       max-pool-prepared-statement-per-connection-size: 20
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
 mybatis:
   # 指定 *Mapper.xml 的位置
   mapper-locations: classpath:mapper/*Mapper.xml
