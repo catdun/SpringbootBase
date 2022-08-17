@@ -1,0 +1,39 @@
+2022-08-17 17:31:20.451  INFO 10932 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-17 17:31:20.452  INFO 10932 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-17 17:31:20.460  INFO 10932 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-17 17:31:24.358  INFO 1312 --- [main] com.mybatis.Application                  : Starting Application on DESKTOP-INCPE9A with PID 1312 (F:\work\IdeaProjects\SpringbootBase\target\classes started by lc in F:\work\IdeaProjects\SpringbootBase)
+2022-08-17 17:31:24.362  INFO 1312 --- [main] com.mybatis.Application                  : No active profile set, falling back to default profiles: default
+2022-08-17 17:31:25.528  INFO 1312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2022-08-17 17:31:25.536  INFO 1312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-17 17:31:25.536  INFO 1312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-08-17 17:31:25.625  INFO 1312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-17 17:31:25.625  INFO 1312 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1207 ms
+2022-08-17 17:31:25.722  INFO 1312 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-17 17:31:27.486  INFO 1312 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-17 17:31:27.929  INFO 1312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-17 17:31:28.112  INFO 1312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2022-08-17 17:31:28.115  INFO 1312 --- [main] com.mybatis.Application                  : Started Application in 4.262 seconds (JVM running for 5.231)
+2022-08-17 17:33:31.983  INFO 1312 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-17 17:33:31.985  INFO 1312 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-17 17:33:31.998  INFO 1312 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-08-17 17:38:20.824  INFO 1312 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-17 17:38:20.847  INFO 1312 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-17 17:38:20.882  INFO 1312 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-08-17 17:38:25.755  INFO 11260 --- [main] com.mybatis.Application                  : Starting Application on DESKTOP-INCPE9A with PID 11260 (F:\work\IdeaProjects\SpringbootBase\target\classes started by lc in F:\work\IdeaProjects\SpringbootBase)
+2022-08-17 17:38:25.759  INFO 11260 --- [main] com.mybatis.Application                  : No active profile set, falling back to default profiles: default
+2022-08-17 17:38:27.301  INFO 11260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10086 (http)
+2022-08-17 17:38:27.314  INFO 11260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-17 17:38:27.315  INFO 11260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-08-17 17:38:27.561  INFO 11260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-17 17:38:27.562  INFO 11260 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1747 ms
+2022-08-17 17:38:27.736  INFO 11260 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-08-17 17:38:29.430  INFO 11260 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-08-17 17:38:29.875  INFO 11260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-17 17:38:30.077  INFO 11260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10086 (http) with context path ''
+2022-08-17 17:38:30.080  INFO 11260 --- [main] com.mybatis.Application                  : Started Application in 5.059 seconds (JVM running for 6.136)
+2022-08-17 17:38:51.108  INFO 11260 --- [http-nio-10086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-17 17:38:51.108  INFO 11260 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-17 17:38:51.117  INFO 11260 --- [http-nio-10086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-08-17 17:39:43.302  INFO 11260 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-17 17:39:43.306  INFO 11260 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-08-17 17:39:43.321  INFO 11260 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

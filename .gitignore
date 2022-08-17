@@ -2,3 +2,5 @@
 .idea/
 # Package Files
 target/
+# Log Files
+log/
